@@ -1,0 +1,152 @@
+/* Venue */
+
+/* Ordering BEGIN */
+.sm-venue {
+  @media(--medium-ish) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
+.sm-venue__copy,
+.sm-venue__pic,
+.sm-venue__cta {
+  @media(--medium-ish) { flex: 0 1 50%; }
+  @media(--medium-large) { flex: 0 1 40%; }
+  @media(--large-ish) { flex: 0 1 60%; }
+}
+
+.sm-venue__copy {
+  @media(--medium-ish) {
+    align-self: center;
+    order: 1;
+  }
+}
+
+.sm-venue__pic {
+  height: 16.875rem;
+
+  @media(--small-ish) { height: 23.625rem; }
+
+  @media(--medium-ish) {
+    height: 18.875rem;
+    order: 2;
+    right: -2.5rem;
+  }
+
+  @media(--medium-large) { height: 20.875rem; }
+
+  @media(--large-ish) {
+    flex: 0 1 40%;
+    height: 20.625rem;
+    right: -4.5rem;
+  }
+}
+
+.sm-venue__cta {
+  @media(--medium-ish) { order: 3; }
+}
+/* Ordering END */
+
+
+.i-venue {
+  box-shadow: 0 0 80px -30px var(--c-black);
+  margin-bottom: 2rem;
+  position: relative;
+
+  &::before {
+    background-color: var(--c-rose-bud);
+    content: '';
+    height: 7.5rem;
+    left: -.45rem;
+    position: absolute;
+    top: -.45rem;
+    width: 4rem;
+  }
+}
+
+.i-venue__lines {
+  bottom: -1.3rem;
+  position: absolute;
+  right: 0;
+
+  @media(--medium-ish) { right: 1.5rem; }
+
+  &::before,
+  &::after {
+    border-right: .7em double var(--c-light-apricot);
+    content: '';
+    height: 1em;
+    position: absolute;
+  }
+
+  &::before {
+    right: 1.8em;
+    top: -1.3em;
+  }
+
+  &::after {
+    right: .95em;
+    top: -1.3em;
+  }
+}
+
+.i-venue__waves {
+  bottom: 0.8em;
+  fill: color(var(--c-gigas) a(80%));
+  left: -1.65em;
+  position: absolute;
+  width: 6em;
+  z-index: 2;
+}
+
+/* Change label for show Venue / Map */
+.i-venue__cta::before { content: 'Show Venue'; }
+
+.i-venue__cta--map::before { content: 'Show Map'; }
+
+
+/* Venue / Map Flip - TODO: SHOW VENUE FIRST */
+.i-venue__wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.i-venue-pic {
+  height: 100%;
+  transform: translateX(-50%);
+  width: auto;
+  z-index: 1;
+}
+
+#map {
+  height: 16.875rem; /* I SEE DEAD PIXELS :P */
+
+  @media(--small-ish) { height: 23.625rem; }
+  @media(--medium-ish) { height: 18.875rem; }
+  @media(--medium-large) { height: 20.875rem; }
+  @media(--large-ish) { height: 20.625rem; }
+}
+
+.flip-container {
+  height: 100%;
+  perspective: 1000;
+  width: auto;
+}
+
+.flip-container.show-map .flipper { transform: rotateY(-180deg); }
+
+.flipper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s;
+}
+
+.front {
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+}

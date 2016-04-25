@@ -1,0 +1,52 @@
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*css/
+|
+|– normalize.css               # Normalize reset stylesheet
+|
+|– _settings.fonts.css         # Web fonts
+|– _settings.variables.css     # Variables for colors, speed, etc
+|– _settings.mediaqueries.css  # Set viewports
+|
+|– _tools.mixins.css           # grid mixin
+|
+|– _base.images.css            # Image base styles
+|– _base.links.css             # Links base styles
+|– _base.page.css              # Page base styles
+|– _base.typography.css        # DOM elements typography base styles - No class or IDs
+|
+|– _module.speaker.css         # Speakers module styles
+|– _module.team.css            # Team module styles
+|– _module.venue.css           # Venue module styles
+|– _module.info.css            # Info module styles
+|
+|– _composition.homepage.css   # Homepage base styles
+|– _composition.logo.css       # Logo base styles
+|– _composition.date.css       # Top date base styles
+|
+|– _trumps.overrides.css       # Site override styles
+|
+`– main.css                    # Main Sass file
+*/
+
+@import 'normalize.css'; /* import from node_modules */
+@import '_settings.fonts.css';
+@import '_settings.variables.css';
+@import '_settings.mediaqueries.css';
+
+@import '_tools.mixins.css';
+
+@import '_base.images.css';
+@import '_base.links.css';
+@import '_base.page.css';
+@import '_base.typography.css';
+
+
+@import '_module.speaker.css';
+@import '_module.team.css';
+@import '_module.venue.css';
+@import '_module.info.css';
+
+@import '_composition.homepage.css';
+@import '_composition.logo.css';
+@import '_composition.date.css';

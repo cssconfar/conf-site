@@ -1,0 +1,10 @@
+@custom-media --small-ish (width >= 30em);
+@custom-media --medium-ish (width >= 40em);
+@custom-media --logo-artisitic-max (width >= 54.6875em);
+@custom-media --medium-large (width >= 62.5em);
+@custom-media --large-ish (width >= 84em);
+@custom-media --date (width >= 120em);
+
+/*.media-query-example {
+  @media(--small-ish) { color: tomato; }
+}*/

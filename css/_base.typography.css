@@ -1,0 +1,65 @@
+h1,h2,h3,h4,h5,h6,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr { margin-top: 0; }
+
+body {
+  font-family: var(--f-serif);
+  font-weight: 300;
+}
+
+h1 {
+  font-family: var(--f-sans);
+  font-size: 2em;
+  font-weight: 700;
+  line-height: .875;
+  margin-bottom: 3.25rem;
+}
+
+h2 {
+  font-family: var(--f-sans);
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 1;
+
+  @media(--medium-ish) { font-size: 2.5em; }
+}
+
+h3 {
+  font-family: var(--f-sans);
+  font-size: .875em;
+  font-weight: 300;
+  letter-spacing: .15em;
+  line-height: 1.75;
+
+  @media(--large-ish) { line-height: 2.85; }
+}
+
+h4 {
+  font-size: 1.375em;
+  line-height: 1.2;
+
+  @media(--large-ish) { font-size: 1.875em; }
+}
+
+p {
+  color: var(--c-gigas);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+
+  @media(--large-ish) { margin-bottom: 3.5rem; }
+}
+
+time {
+  font-size: .7em;
+  line-height: 4;
+
+  @media(--large-ish) { line-height: inherit; }
+}
+
+button { font-size: .625em; }
+
+fieldset {
+  margin-left: 0;
+  margin-right: 0;
+}
