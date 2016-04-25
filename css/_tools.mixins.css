@@ -1,0 +1,28 @@
+/* tools.mixins */
+@keyframes fadeIn {
+  100% { opacity: 1; }
+}
+
+@keyframes slideRight {
+  100% { transform: scaleX(1); }
+}
+
+@keyframes slideDown {
+  100% { transform: scaleY(1); }
+}
+
+@keyframes slideUpWaves {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftDate {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+

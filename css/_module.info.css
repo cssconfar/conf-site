@@ -1,0 +1,35 @@
+/* Module info */
+.m-info__wrap {
+  @media(--medium-ish) { flex: 0 1 30%; }
+  @media(--medium-large) { flex: 0 1 25%;}
+  @media(--large-ish) { flex: 0 1 20%; }
+}
+
+.m-info__title {
+  border-bottom: 3px solid var(--c-white);
+  color: var(--c-rose-bud);
+  padding-top: 1rem;
+
+  @media(--large-ish) { border-bottom-width: 4px; }
+}
+
+.m-info__copy {
+  color: var(--c-white);
+  display: inline;
+  line-height: 1.35;
+  margin-right: 1rem;
+}
+
+.m-info__decoration {
+  background-image: url('../../svg/line-star.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: .3125rem;
+  content: '';
+  display: inline-block;
+  height: .625rem;
+  margin-left: -.125rem;
+  width: 5.4rem;
+}
+
+.m-info__link { color: var(--c-white); }

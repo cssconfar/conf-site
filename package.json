@@ -1,0 +1,45 @@
+{
+  "name": "cssconfar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "development": "gulp",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loumontano/cssconfar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loumontano/cssconfar/issues"
+  },
+  "homepage": "https://github.com/loumontano/cssconfar#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "css-mqpacker": "^4.0.1",
+    "cssnano": "^3.5.2",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^3.2.2",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-uglify": "^1.5.3",
+    "normalize.css": "^4.0.0",
+    "postcss": "^5.0.19",
+    "postcss-animation": "0.0.3",
+    "postcss-animation-data": "0.0.3",
+    "postcss-color-function": "^2.0.1",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-import": "^8.0.2",
+    "postcss-media-minmax": "^2.1.2",
+    "postcss-mixins": "^4.0.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-nesting": "^2.3.1",
+    "postcss-simple-vars": "^1.2.0"
+  }
+}
