@@ -65,6 +65,15 @@
 
 .m-speaker__name { margin-bottom: .875rem; }
 
+.m-speaker__social {
+  fill: var(--c-light-apricot);
+  margin-top: .5rem;
+  transition: fill .5s ease-in-out;
+  width: 1.7rem;
+
+  &:hover { fill: var(--c-gigas); }
+}
+
 .m-speaker__desc { margin-bottom: 0; }
 
 .m-speaker__link { color: var(--c-rose-bud); }
