@@ -67,7 +67,8 @@
 
 .m-speaker__social {
   fill: var(--c-light-apricot);
-  margin-top: .5rem;
+  float: right;
+  margin-top: -.25rem;
   transition: fill .5s ease-in-out;
   width: 1.7rem;
 
