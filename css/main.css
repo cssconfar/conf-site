@@ -43,6 +43,7 @@
 
 
 @import '_module.speaker.css';
+@import '_module.sponsors.css';
 @import '_module.team.css';
 @import '_module.venue.css';
 @import '_module.info.css';
