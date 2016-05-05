@@ -8,8 +8,17 @@ var options = {
   }
 };
 
-
 var browser = wdio.remote(options);
+
+function assertShots (err, shots) {
+  assert.ifError(err);
+
+  Object.keys(shots).forEach(function(element) {
+    shots[element].forEach(function(shot) {
+      assert.ok(shot.isWithinMisMatchTolerance, ['☝️ 🤓 🔥  Daaaamn Turkledawg!!!💥  Betta check that diff/ folder‼️']);
+    });
+  });
+};
 
 webdrivercss.init(browser, {
   screenshotRoot: './tests/testIconTwitter/screenshots/',
@@ -27,12 +36,7 @@ browser
       name: 'icon',
       elem: iconTwitter
     }
-  ],
-    function(err, res) {
-      console.log(err);
-      console.log(res);
-    }
-  )
+  ], assertShots)
   .moveToObject(iconTwitter)
   .buttonDown(iconTwitter)
   .pause(500)
@@ -41,13 +45,5 @@ browser
       name: 'iconHovered',
       elem: iconTwitter
     }
-  ],
-    function(err, res) {
-      // assert.ifError(err);
-      // assert.ok(res.iconHovered[0].isWithinMisMatchTolerance);
-      // assert.ok(res.iconHovered[0].isWithinMisMatchTolerance);
-      console.log(err);
-      console.log(res);
-    }
-  )
+  ], assertShots)
   .end();
