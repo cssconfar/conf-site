@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "development": "gulp",
     "start": "gulp",
-    "selenium": "selenium-standalone"
+    "selenium": "selenium-standalone",
+    "testModuleSpeaker": "node /Users/verpixelt/projects/cssconfar/tests/testModuleSpeaker/testModuleSpeaker.js"
   },
   "repository": {
     "type": "git",
