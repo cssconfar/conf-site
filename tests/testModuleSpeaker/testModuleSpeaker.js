@@ -12,7 +12,6 @@ var browser = wdio.remote(options);
 
 function assertShots (err, shots) {
   assert.ifError(err);
-
   Object.keys(shots).forEach(function(element) {
     shots[element].forEach(function(shot) {
       assert.ok(shot.isWithinMisMatchTolerance, ['☝️ 🤓 🔥  Daaaamn Turkledawg!!!💥  Betta check that diff/ folder‼️']);
@@ -25,7 +24,8 @@ webdrivercss.init(browser, {
   failedComparisonsRoot: './tests/testIconTwitter/screenshots/diffs/'
 });
 
-var iconTwitter = 'body > div > section.m-main > div.m-speaker__list > article:nth-child(1) > div > h4 > a > .m-speaker__social'
+var moduleSpeaker = 'body > div > section.m-main > div.m-speaker__list > article:nth-child(2)'
+var iconTwitter = 'body > div > section.m-main > div.m-speaker__list > article:nth-child(2) > div > h4 > a > .m-speaker__social'
 
 
 browser
@@ -34,7 +34,7 @@ browser
   .webdrivercss('social', [
     {
       name: 'icon',
-      elem: iconTwitter
+      elem: moduleSpeaker
     }
   ], assertShots)
   .moveToObject(iconTwitter)
@@ -43,7 +43,7 @@ browser
   .webdrivercss('social', [
     {
       name: 'iconHovered',
-      elem: iconTwitter
+      elem: moduleSpeaker
     }
   ], assertShots)
   .end();
