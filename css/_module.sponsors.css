@@ -1,10 +1,14 @@
 .m-sponsor-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
   margin-bottom: 3rem;
 }
 
 .m-sponsor-list__item {
-  flex: 0 1 20%;
+  margin-right: 30px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  text-align: center;
 }
