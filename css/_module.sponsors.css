@@ -6,9 +6,9 @@
 }
 
 .m-sponsor-list__item {
-  margin:0 30px 30px 0;
-  width: 200px;
-  height: 200px;
-  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  margin:0 2.25rem 2.25rem 0;
+  width: 12.5rem;
+  height: 12.5rem;
+  box-shadow: 0 0 1.25rem rgba(0,0,0,.2);
   text-align: center;
 }
