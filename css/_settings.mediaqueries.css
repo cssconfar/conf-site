@@ -5,6 +5,6 @@
 @custom-media --large-ish (width >= 84em);
 @custom-media --date (width >= 120em);
 
-/*.media-query-example {
+/* .media-query-example {
   @media(--small-ish) { color: tomato; }
-}*/
+} */

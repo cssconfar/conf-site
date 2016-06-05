@@ -1,8 +1,10 @@
 /* Module info */
 .m-info__wrap {
-  @media(--medium-ish) { flex: 0 1 30%; }
-  @media(--medium-large) { flex: 0 1 25%;}
-  @media(--large-ish) { flex: 0 1 20%; }
+  @media (--medium-ish) { flex: 0 1 30%; }
+
+  @media (--medium-large) { flex: 0 1 25%; }
+
+  @media (--large-ish) { flex: 0 1 20%; }
 }
 
 .m-info__title {
@@ -10,7 +12,7 @@
   color: var(--c-rose-bud);
   padding-top: 1rem;
 
-  @media(--large-ish) { border-bottom-width: 4px; }
+  @media (--large-ish) { border-bottom-width: 4px; }
 }
 
 .m-info__copy {

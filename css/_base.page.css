@@ -10,7 +10,7 @@ body {
   padding-top: 1.875rem;
 }
 
-.container { overflow-x: hidden;}
+.container { overflow-x: hidden; }
 
 header,
 section {
@@ -18,13 +18,13 @@ section {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 
-  @media(--small-ish) {
+  @media (--small-ish) {
     margin-bottom: 3.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  @media(--large-ish) {
+  @media (--large-ish) {
     max-width: 80rem;
     padding-left: 0;
     padding-right: 0;

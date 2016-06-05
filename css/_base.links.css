@@ -13,14 +13,14 @@ a {
   padding-bottom: 1rem;
   padding-top: 1rem;
 
-  @media(--medium-ish) {
+  @media (--medium-ish) {
     margin: 0 auto 3rem;
     width: 50vw;
   }
 
-  @media(--medium-large) { width: 70vw; }
+  @media (--medium-large) { width: 70vw; }
 
-  @media(--large-ish) { width: 100%; }
+  @media (--large-ish) { width: 100%; }
 }
 
 .cta-wrap--has-bgc { background-color: var(--c-gigas); }
@@ -38,7 +38,7 @@ a {
   text-transform: uppercase;
   width: 12.5rem;
 
-  @media(--large-ish) { width: 15rem; }
+  @media (--large-ish) { width: 15rem; }
 
   &:hover {
     border-color: color(var(--c-rose-bud) l(80%));
@@ -58,4 +58,3 @@ a {
   display: inline-block;
   margin: 0 0 70px 20px;
 }
-

@@ -1,4 +1,4 @@
-  .m-team__list {
+.m-team__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,8 +9,9 @@
   flex: 0 1 100%;
   margin-bottom: 1.75rem;
 
-  @media(--medium-ish) { flex: 0 1 30%; }
-  @media(--large-ish) { flex: 0 1 21%; }
+  @media (--medium-ish) { flex: 0 1 30%; }
+
+  @media (--large-ish) { flex: 0 1 21%; }
 
   &::before {
     border-top: .1875rem solid var(--c-gigas);
@@ -18,7 +19,7 @@
     display: block;
     margin-bottom: .5rem;
 
-    @media(--large-ish) {
+    @media (--large-ish) {
       border-top-width: .25rem;
       margin-bottom: .75rem;
     }
@@ -27,7 +28,7 @@
   &:last-child {
     display: none;
 
-    @media(--large-ish) { display: block; }
+    @media (--large-ish) { display: block; }
   }
 }
 

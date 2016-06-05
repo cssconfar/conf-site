@@ -7,7 +7,7 @@
   padding-bottom: .683em;
   position: relative;
 
- @media (--logo-artisitic-max) { font-size: 6.5625em; }
+  @media (--logo-artisitic-max) { font-size: 6.5625em; }
 }
 
 .logo-artistic__word-first {
@@ -51,7 +51,7 @@
     top: -1.3em;
     animation: fadeIn 1.5s 1s ease-out forwards;
 
-    @media(--large-ish) { left: 2.5em; }
+    @media (--large-ish) { left: 2.5em; }
   }
 
   &::after {
@@ -62,7 +62,7 @@
     top: -1.3em;
     animation: fadeIn 1.5s 1.2s ease-out forwards;
 
-    @media(--large-ish) { left: 2.87em; }
+    @media (--large-ish) { left: 2.87em; }
   }
 }
 

@@ -1,11 +1,11 @@
 :root {
-  --c-alabaster: #F7F7F7;
-  --c-arapawa: #0E0D55;
-  --c-gigas: #3D3B94;
-  --c-light-apricot: #FDCEB0;
-  --c-rose-bud: #F8A7AF;
-  --c-white: #FFF;
-  --c-black: #000;
+  --c-alabaster: hsl(0, 0%, 97%); /* #F7F7F7 */
+  --c-arapawa: hsl(241, 73%, 19%); /* #0E0D55 */
+  --c-gigas: hsl(241, 43%, 41%); /* #3D3B94 */
+  --c-light-apricot: hsl(23, 95%, 84%); /* #FDCEB0 */
+  --c-rose-bud: hsl(354, 85%, 81%); /* #F8A7AF */
+  --c-white: hsl(0, 0%, 100%); /* #FFF */
+  --c-black: hsl(0, 0%, 0%); /* #000 */
 
   --f-sans: 'Hind Vadodara', sans-serif;
   --f-serif: 'Vollkorn', serif;

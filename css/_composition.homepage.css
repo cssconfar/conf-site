@@ -7,11 +7,11 @@
   margin-right: auto;
   position: relative;
 
-  @media (--large-ish) { position: relative;}
+  @media (--large-ish) { position: relative; }
 }
 
 .m-info {
-  @media(--medium-ish) {
+  @media (--medium-ish) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -28,7 +28,7 @@
 }
 
 .nav-wrapper {
-  @media(--large-ish) { margin: 0 auto; }
+  @media (--large-ish) { margin: 0 auto; }
 }
 
 .site-nav {
@@ -36,7 +36,7 @@
   margin-bottom: 2rem;
   padding-bottom: .5rem;
 
-  @media(--large-ish) {
+  @media (--large-ish) {
     margin-bottom: 3.5rem;
     padding-bottom: 1rem;
   }
@@ -50,7 +50,7 @@
   font-family: var(--f-sans);
   margin-bottom: .5rem;
 
-  @media(--medium-ish) { display: inline; }
+  @media (--medium-ish) { display: inline; }
 }
 
 .site-logo__svg {
@@ -59,7 +59,7 @@
   margin-right: .375em;
   width: 1.125em;
 
-  @media(--medium-ish) {
+  @media (--medium-ish) {
     position: relative;
     top: .125rem;
   }
@@ -68,7 +68,7 @@
 .site-nav__list {
   margin-left: 1.5rem;
 
-  @media(--medium-ish) {
+  @media (--medium-ish) {
     display: inline;
     margin-left: 2rem;
   }
@@ -85,13 +85,13 @@
 .site-nav__item:not(:first-child) .site-nav__link {
   margin-left: .95rem;
 
-  @media(--medium-ish) { margin-left: 1.5rem; }
+  @media (--medium-ish) { margin-left: 1.5rem; }
 }
 
 .show-link-large {
   display: none;
 
-  @media(--medium-ish) { display: inline-block; }
+  @media (--medium-ish) { display: inline-block; }
 }
 
 .m-head__title {
@@ -110,7 +110,6 @@
   }
 }
 
-
 /* Main Module */
 .m-main {
   background-color: var(--c-alabaster);
@@ -120,12 +119,12 @@
   padding: 1.5rem;
   width: calc(100% - 3rem);
 
-  @media(--medium-ish) {
+  @media (--medium-ish) {
     padding: 2rem;
     width: calc(100% - 4rem);
   }
 
-  @media(--large-ish) {
+  @media (--large-ish) {
     margin-bottom: -5rem;
     padding: 4.5rem 3.5rem;
     position: relative;
@@ -148,8 +147,9 @@
   top: 0;
   width: .625rem;
 
-  @media(--medium-ish) { left: -2.6rem; }
-  @media(--large-ish) { left: -4.1rem; }
+  @media (--medium-ish) { left: -2.6rem; }
+
+  @media (--large-ish) { left: -4.1rem; }
 }
 
 .m-main__title {
@@ -175,31 +175,30 @@
   transition: margin-top .25s ease-out;
   width: 1rem;
 
-  @media(--large-ish) { margin-top: -.75rem; }
+  @media (--large-ish) { margin-top: -.75rem; }
 
   &:hover { margin-top: -1rem; }
 }
 
 .m-main__copy {
-  @media(--large-ish) { max-width: 80%; }
+  @media (--large-ish) { max-width: 80%; }
 }
-
 
 /* Footer */
 .m-foot {
   background-color: var(--c-arapawa);
-  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  padding: 1.5rem 1.5rem 2rem;
 
-  @media(--medium-ish) { padding: 2rem; }
+  @media (--medium-ish) { padding: 2rem; }
 
-  @media(--large-ish) { padding-top: 10rem; }
+  @media (--large-ish) { padding-top: 10rem; }
 }
 
 .foot-wrapper {
   margin: 0 auto;
   max-width: 80rem;
 
-  @media(--medium-ish) {
+  @media (--medium-ish) {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -209,20 +208,19 @@
 .footer-info,
 .m-subscribe,
 .m-foot__social {
-  @media(--medium-ish) {
+  @media (--medium-ish) {
     align-items: flex-start;
     flex: 0 1 35%;
   }
 
-  @media(--large-ish) { flex: 0 1 25%; }
+  @media (--large-ish) { flex: 0 1 25%; }
 }
 
 .m-foot__copy {
   color: color(var(--c-white) a(35%));
   font-size: .75em;
 
-  @media(--small-ish) {  }
-  @media(--medium-ish) {
+  @media (--medium-ish) {
     margin-bottom: 0;
     margin-top: .875rem;
   }
@@ -231,16 +229,18 @@
 .m-subscribe {
   margin-bottom: 1.5rem;
 
-  @media(--medium-ish) { margin-bottom: 0; }
+  @media (--medium-ish) { margin-bottom: 0; }
 }
 
 .m-subscribe__fieldset {
   position: relative;
   width: 100%;
 
-  @media(--small-ish) { width: 70%; }
-  @media(--medium-ish) { width: 12.875rem; }
-  @media(--large-ish) { width: 13.375rem; }
+  @media (--small-ish) { width: 70%; }
+
+  @media (--medium-ish) { width: 12.875rem; }
+
+  @media (--large-ish) { width: 13.375rem; }
 }
 
 .m-subscribe__label {
@@ -276,7 +276,7 @@
   padding-right: 0;
   padding-left: 0;
 
-  @media(--large-ish) { background-size: 100%; }
+  @media (--large-ish) { background-size: 100%; }
 }
 
 .response {
