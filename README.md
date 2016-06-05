@@ -24,3 +24,5 @@ By running `gulp` (the default task) you get the following:
 This project uses plain CSS on steroids (postCSS). It enables prior mentioned features. For more information check the `gulpfile.js` and [cssnext{}](http://cssnext.io/features/).
 
 Production files are not checked in during development to avoid unnecessary merge conflicts. The default gulp task (`gulp`) always generates new CSS and JS files on start up.
+
+This project includes stylelint.
