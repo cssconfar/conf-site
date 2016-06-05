@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "development": "gulp",
-    "start": "gulp"
+    "start": "gulp",
+    "stylelint": "stylelint"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "postcss-mixins": "^4.0.1",
     "postcss-nested": "^1.0.0",
     "postcss-nesting": "^2.3.1",
-    "postcss-simple-vars": "^1.2.0"
+    "postcss-simple-vars": "^1.2.0",
+    "stylelint-config-standard": "^8.0.0"
   }
 }
