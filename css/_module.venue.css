@@ -51,7 +51,7 @@
 }/* Ordering END */
 
 .i-venue {
-  box-shadow: 0 0 80px -30px var(--c-black);
+  box-shadow: 0 0 5rem -1.875rem var(--c-black);
   margin-bottom: 2rem;
   position: relative;
 
