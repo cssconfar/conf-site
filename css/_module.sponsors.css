@@ -7,11 +7,11 @@
 
 .m-sponsor-list__item {
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, .2);
-  height: 12.5rem;
+  height: 12rem;
   margin: 0 auto 2.25rem;
   position: relative;
   text-align: center;
-  width: 12.5rem;
+  width: 12rem;
 
   @media (--medium-ish) { margin: 0 .75rem 2.25rem 0; }
   @media (--medium-large) { margin: 0 2.25rem 2.25rem 0; }
