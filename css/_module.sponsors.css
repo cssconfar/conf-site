@@ -24,3 +24,13 @@
   position: absolute;
   top: 50%;
 }
+
+.silver-sponsors-cont {
+  width: 100%;
+}
+
+.silver-sp-item {
+  display: inline-block;
+  height: 8rem;
+  width: 8rem;
+}
