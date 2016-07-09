@@ -8,6 +8,7 @@ body {
   background-color: var(--c-gigas);
   overflow-x: hidden;
   padding-top: 1.875rem;
+  position: relative;
 }
 
 .container { overflow-x: hidden; }

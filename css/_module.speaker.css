@@ -51,6 +51,7 @@
   }
 
   @media (--medium-large) {
+    cursor: pointer;
     max-width: 11.25rem;
     width: 100%;
   }
@@ -63,7 +64,15 @@
   letter-spacing: .4em;
 }
 
-.m-speaker__name { margin-bottom: .875rem; }
+.m-speaker__name {
+  margin-bottom: .875rem;
+
+  &:hover {
+    color: var(--c-rose-bud);
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+  };
+}
 
 .m-speaker__social {
   fill: var(--c-light-apricot);
@@ -85,4 +94,45 @@
   @media (--small-ish) { width: 70%; }
 
   @media (--medium-large) { width: 100%; }
+}
+
+
+
+/* OVERLAY TALK DESCRIPTION */
+
+.overlay-bg {
+  background-color: color(var(--c-black) a(70%));
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  display: none;
+}
+
+.m-modal {
+  background-color: var(--c-white);
+  box-shadow: 0 0 6.875rem -3.125rem color(var(--c-black) a(80%));
+  left: 50%;
+  max-width: 40rem;
+  padding: 3rem;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 90%;
+  z-index: 3;
+
+  display: none;
+}
+
+.m-modal__close {
+  color: var(--c-gigas);
+  cursor: pointer;
+  font-family: var(--f-sans);
+  font-size: 1.5em;
+  position: absolute;
+  right: 2rem;
+  top: 1.3rem;
 }
