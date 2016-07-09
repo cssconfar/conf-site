@@ -1,13 +1,17 @@
 $(document).ready(function() {
 
-  // OPEN OVERLAY
+  // OPEN TALK OVERLAY
   $('.m-speaker__img, .m-speaker__name').on('click', function() {
-    $('.m-modal,.overlay-bg').fadeIn();
+    $('.overlay-bg').fadeIn();
 
+    var modalName = $(this).attr('data-modal');
+
+    $('.m-modal').hide();
+    $(modalName).fadeIn();
   });
 
 
-  // CLOSE OVERLAY
+  // CLOSE TALK OVERLAY
   $('.m-modal__close').on('click', function() {
     $(this).parent().fadeOut();
     $('.overlay-bg').fadeOut();
