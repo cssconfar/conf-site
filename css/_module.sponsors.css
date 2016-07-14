@@ -30,7 +30,10 @@
 }
 
 .silver-sp-item {
-  display: inline-block;
+  display: block;
+  margin: 2rem auto;
   height: 8rem;
   width: 8rem;
+
+  @media (--medium-ish) { display: inline-block; }
 }
