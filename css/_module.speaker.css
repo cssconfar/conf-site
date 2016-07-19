@@ -136,3 +136,5 @@
   right: 2rem;
   top: 1.3rem;
 }
+
+.name-overlay { color: var(--c-gigas); }
