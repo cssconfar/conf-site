@@ -138,3 +138,38 @@
 }
 
 .name-overlay { color: var(--c-gigas); }
+
+
+/* LINEUP */
+.m-lineup { margin-bottom: 3rem; }
+
+.m-lineup__item {
+  border-bottom: 1px solid var(--c-gigas);
+  color: var(--c-gigas);
+  margin-bottom: 1rem;
+}
+
+.lineup-title { margin-bottom: 1rem; }
+
+.lineup-title--highlight { color: var(--c-rose-bud); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
